@@ -10,7 +10,7 @@
 }
 
 section {
-  padding: 50px 0;
+  padding: 50px 20px;
 }
 
 .container {
@@ -24,6 +24,10 @@ section {
   margin-bottom: 0.8rem;
 }
 
+h2 {
+  font-family: "Montserrat", sans-serif;
+}
+
 .text-bold {
   font-weight: bold;
 }
@@ -31,6 +35,24 @@ section {
 p {
   font-family: "Open Sans", sans-serif;
   font-size: 18px;
+}
+
+.button-1 {
+  padding: 20px 50px;
+  border-radius: 5rem;
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 20px;
+}
+
+.button-1:hover {
+  background-color: white;
+  color: black;
 }
 
 /* =============HERO SECTION=============== */
@@ -55,6 +77,12 @@ p {
 
 .hero-container {
   max-width: 50%;
+}
+
+@media screen and (max-width: 400px) {
+  .hero-container {
+    max-width: 100% !important;
+  }
 }
 
 .hero-container h1 {
@@ -117,4 +145,99 @@ p {
   color: black;
   text-decoration: none;
   border-bottom: 1px solid orange;
+}
+/* ===============BAKING SECTION============= */
+
+.heading-text {
+  text-align: center;
+  font-weight: bold;
+  font-size: 4rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+.baking-container-wrapper {
+  margin-top: 4rem;
+}
+
+.baking-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 20px;
+  row-gap: 40px;
+}
+
+@media screen and (max-width: 991px) {
+  .baking-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .baking-grid {
+    grid-template-columns: 1fr;
+    padding: 30px;
+  }
+}
+
+.baking-flex {
+  display: flex;
+  gap: 20px;
+}
+
+.baking-flex .baking-image {
+  height: 65px;
+  width: 65px;
+}
+
+.baking-desc {
+  margin-top: 20px;
+}
+
+/* =============PASTIES SECTION================ */
+.pasties-section {
+  display: flex;
+  padding: 0 !important;
+  height: 100vh;
+}
+
+@media screen and (max-width: 991px) {
+  .pasties-section {
+    flex-wrap: wrap-reverse;
+    height: fit-content !important;
+  }
+  .pasties-image {
+    width: 100% !important;
+
+    img {
+      width: 100% !important;
+    }
+  }
+
+  .pasties-inner-container {
+    width: 100% !important;
+  }
+}
+
+.pasties-image {
+  width: 50%;
+}
+
+.pasties-section img {
+  width: 100%;
+  height: 100%;
+}
+.pasties-inner-container {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  color: white;
+  padding: 20px;
+  width: 50%;
+}
+
+.pasties-inner-container h2 {
+  font-size: 4rem;
 }
