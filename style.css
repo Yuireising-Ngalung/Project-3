@@ -353,6 +353,10 @@ p {
   .breads-container-3 {
     width: 100%;
   }
+
+  .breads-container-2 h2 {
+    font-size: 3rem !important;
+  }
 }
 
 /* ================MENU SECTION================ */
