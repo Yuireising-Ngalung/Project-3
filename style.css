@@ -55,6 +55,23 @@ p {
   color: black;
 }
 
+.button-2 {
+  padding: 20px 50px;
+  border-radius: 5rem;
+  background: transparent;
+  border: 2px solid black;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 20px;
+}
+
+.button-2:hover {
+  background-color: black;
+  color: white;
+}
+
 /* =============HERO SECTION=============== */
 
 .hero-section {
@@ -288,4 +305,97 @@ p {
 
 .breads-card .bread-desc {
   font-style: italic;
+  font-weight: 300;
+  text-align: center;
+}
+
+.breads-container-2 {
+  width: 70%;
+  margin: auto;
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+}
+
+.breads-container-2 h2 {
+  margin-bottom: 3rem;
+  font-size: 4rem !important;
+}
+
+.breads-container-2 img {
+  width: 100%;
+}
+
+@media screen and (max-width: 991px) {
+  .breads-container-2 {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+}
+
+.breads-container-3 {
+  width: 70%;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.breads-container-3 h2 {
+  margin-bottom: 20px;
+  font-size: 1.9rem;
+}
+
+.breads-container-3 p {
+  line-height: 2rem;
+}
+
+@media screen and (max-width: 575px) {
+  .breads-container-3 {
+    width: 100%;
+  }
+}
+
+/* ================MENU SECTION================ */
+.menu-section {
+  background-image: url(./images/background-image-5.jpg);
+  color: white;
+  background-repeat: no-repeat;
+}
+.menu-container-wrapper {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+@media screen and (max-width: 991px) {
+  .menu-container-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .menu-container-wrapper {
+    grid-template-columns: 1fr;
+  }
+  .menu-card {
+    height: auto !important;
+  }
+}
+
+.menu-card {
+  background-color: white;
+  color: black;
+  padding: 30px;
+  border-radius: 2rem;
+  height: 300px;
+
+  h2 {
+    margin-bottom: 1rem;
+  }
+
+  ul li {
+    font-size: 1.5rem;
+    font-weight: 100;
+  }
 }
