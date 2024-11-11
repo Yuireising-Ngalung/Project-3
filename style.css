@@ -172,6 +172,12 @@ p {
   font-family: "Montserrat", sans-serif;
 }
 
+@media screen and (max-width: 350px) {
+  .heading-text {
+    font-size: 2.5rem;
+  }
+}
+
 .baking-container-wrapper {
   margin-top: 4rem;
 }
@@ -402,4 +408,56 @@ p {
     font-size: 1.5rem;
     font-weight: 100;
   }
+}
+
+/* =============FRESHLY BAKED=========== */
+.fresh_baked_section {
+  background-color: #f6f6f8;
+}
+.fresh_baked {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.fresh_baked h3 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 3rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+.fresh_baked img {
+  width: 100%;
+  object-fit: cover;
+}
+
+/* =============CONTACT US=================== */
+.contact_section {
+  background-image: url(./images/background-image-7.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.contact_wrapper {
+  background-color: #1a1a1a;
+  color: white;
+  padding: 2rem;
+  max-width: 500px;
+  text-align: center;
+  border-radius: 2rem;
+}
+
+.contact_wrapper h3 {
+  color: #f2952d;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.contact_wrapper p {
+  margin-bottom: 2rem;
+  font-size: 1.125rem;
 }
