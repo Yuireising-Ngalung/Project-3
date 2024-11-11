@@ -250,7 +250,7 @@ p {
   height: 100%;
 }
 .pasties-inner-container {
-  background-color: black;
+  background-color: #040202;
   display: flex;
   justify-content: center;
   flex-direction: column;
