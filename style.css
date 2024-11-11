@@ -370,6 +370,7 @@ p {
   background-image: url(./images/background-image-5.jpg);
   color: white;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 .menu-container-wrapper {
   margin-top: 50px;
