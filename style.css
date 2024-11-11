@@ -462,3 +462,18 @@ p {
   margin-bottom: 2rem;
   font-size: 1.125rem;
 }
+
+/* =================FOOTER SECTION========== */
+footer {
+  background-color: black;
+  color: white;
+  padding-block: 10px;
+}
+
+footer p {
+  text-align: center;
+
+  span a {
+    color: #f2952d;
+  }
+}
