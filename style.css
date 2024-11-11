@@ -475,5 +475,6 @@ footer p {
 
   span a {
     color: #f2952d;
+    text-decoration: none;
   }
 }
